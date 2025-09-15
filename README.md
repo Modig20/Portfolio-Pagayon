@@ -10,7 +10,7 @@ The portfolio is designed with simplicity, clarity, and user-centered principles
 - **style.css** → Stylesheet that defines the layout and design  
 - **Pic.jpg** → My profile picture used in the portfolio  
 - **README.md** → Documentation for the project  
-- **/docs** → References and supporting documents (User Persona, Libfram)  
+- **/docs** → References and supporting documents (User Persona, Wireframe)  
 
 ---
 
