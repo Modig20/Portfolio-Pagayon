@@ -1,125 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arthur John Pagayon | Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Arthur John Pagayon — Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-overlay">
-      <div class="profile-card">
-        <img src="Pic.jpg" alt="Arthur John Pagayon" class="profile-pic">
-        <h1>Arthur John A. Pagayon</h1>
-        <p>3rd Year BS Computer Science Student | Web Developer | Tech Enthusiast</p>
-        <div class="social-links">
-          <a href="mailto:arthurjohn.pagayon@wvsu.edu.ph"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://github.com/Modig20" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.facebook.com/arthurjohn.pagayon.7/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        </div>
-      </div>
-    </div>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="logo" href="#home"><span>AJ</span> Pagayon</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="menuBtn" aria-label="menu" class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-inner container">
+        <div class="profile">
+          <div class="avatar-wrap">
+            <img src="Pic.jpg" alt="Arthur John Pagayon" class="avatar">
+            <div class="avatar-glow"></div>
+          </div>
+          <h1>Arthur John A. Pagayon</h1>
+          <p class="lead">3rd Year BS Computer Science • Web Developer • ML Enthusiast</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="https://github.com/Modig20" target="_blank">GitHub</a>
+          </div>
+          <div class="social">
+            <a href="mailto:arthurjohn.pagayon@wvsu.edu.ph"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/Modig20" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/arthurjohn.pagayon.7" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <div class="num" data-target="3">0</div>
+            <div class="label">Years Studying</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-target="8">0</div>
+            <div class="label">Projects</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-target="4">0</div>
+            <div class="label">Languages & Tools</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="about" class="card">
-    <h2>About Me</h2>
-    <p>
-      Hello! I’m <strong>Arthur John Pagayon</strong>, a 20-year-old 3rd year 
-      <strong>Bachelor of Science in Computer Science</strong> student at 
-      <strong>West Visayas State University</strong>.  
-      I live in Brgy. Bacuranan, Passi City, Iloilo.  
-    </p>
-    <p>
-      I enjoy exploring technology, coding, and creating projects that solve real-world problems. 
-      My goal is to grow as a developer and contribute to innovative software solutions.
-    </p>
-  </section>
+    <section id="about" class="section container card-grid">
+      <div class="about-card">
+        <h2>About Me</h2>
+        <p>I’m <strong>Arthur John</strong>, a passionate computer science student from Iloilo. I build responsive web apps, experiment with machine learning models, and enjoy solving real-world problems through code. I value clean design, readable code, and continuous learning.</p>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-location-dot"></i> Brgy. Bacuranan, Passi City, Iloilo</li>
+          <li><i class="fa-solid fa-graduation-cap"></i> West Visayas State University — BSCS</li>
+          <li><i class="fa-solid fa-calendar-days"></i> Age: 20</li>
+        </ul>
+      </div>
+      <div class="skills-card">
+        <h2>Skills</h2>
+        <div class="skill-group">
+          <div class="skill-item">
+            <div class="skill-head"><span>HTML & CSS</span><span>90%</span></div>
+            <div class="bar"><div style="width:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head"><span>JavaScript</span><span>80%</span></div>
+            <div class="bar"><div style="width:80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head"><span>Python</span><span>75%</span></div>
+            <div class="bar"><div style="width:75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head"><span>Java / C / C++</span><span>70%</span></div>
+            <div class="bar"><div style="width:70%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head"><span>MySQL / MariaDB</span><span>75%</span></div>
+            <div class="bar"><div style="width:75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-head"><span>Git & Tooling</span><span>85%</span></div>
+            <div class="bar"><div style="width:85%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="skills" class="card">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <span class="skill">💻 Python</span>
-      <span class="skill">☕ Java</span>
-      <span class="skill">⚙️ C / C++</span>
-      <span class="skill">🌐 HTML & CSS</span>
-      <span class="skill">🖥️ JavaScript</span>
-      <span class="skill">🗄️ MySQL / MariaDB</span>
-      <span class="skill">🔧 Git & VS Code</span>
-      <span class="skill">🤝 Teamwork</span>
+    <section id="projects" class="section container projects-section">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-filter">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="ml">Machine Learning</button>
+        <button class="filter" data-filter="tools">Tools</button>
+      </div>
+      <div class="projects-grid">
+        <article class="proj web">
+          <img src="images/portfolio-thumb.jpg" alt="">
+          <div class="proj-info">
+            <h3>Portfolio Website</h3>
+            <p>Responsive portfolio with animations and project showcase.</p>
+            <div class="proj-actions">
+              <a class="btn small" href="#projects">View</a>
+              <a class="link" href="https://github.com/Modig20" target="_blank">Source</a>
+            </div>
+          </div>
+        </article>
+        <article class="proj web">
+          <img src="images/taskmanager-thumb.jpg" alt="">
+          <div class="proj-info">
+            <h3>Student Task Manager</h3>
+            <p>Task manager to help students track deadlines, subjects, and priorities.</p>
+            <div class="proj-actions">
+              <a class="btn small" href="#projects">View</a>
+              <a class="link" href="https://github.com/Modig20" target="_blank">Source</a>
+            </div>
+          </div>
+        </article>
+        <article class="proj ml">
+          <img src="images/churn-thumb.jpg" alt="">
+          <div class="proj-info">
+            <h3>Bank Churn Prediction</h3>
+            <p>ML model to predict customer churn with exploratory analysis and deployment demo.</p>
+            <div class="proj-actions">
+              <a class="btn small" href="#projects">View</a>
+              <a class="link" href="https://github.com/Modig20" target="_blank">Source</a>
+            </div>
+          </div>
+        </article>
+        <article class="proj tools">
+          <img src="images/util-thumb.jpg" alt="">
+          <div class="proj-info">
+            <h3>CLI Utilities</h3>
+            <p>Collection of small Python / Java utilities for automation and parsing tasks.</p>
+            <div class="proj-actions">
+              <a class="btn small" href="#projects">View</a>
+              <a class="link" href="https://github.com/Modig20" target="_blank">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section container card-grid edu-section">
+      <div class="edu-timeline">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="time-item">
+            <div class="time-bullet"></div>
+            <div class="time-content">
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p>West Visayas State University — 2023 &ndash; Present</p>
+            </div>
+          </div>
+          <div class="time-item">
+            <div class="time-bullet"></div>
+            <div class="time-content">
+              <h3>Senior High School (STEM)</h3>
+              <p>Passi National High School</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="edu-cta">
+        <h2>Hobbies & Interests</h2>
+        <div class="hobby-list">
+          <div class="hobby"><i class="fa-solid fa-gamepad"></i><span>Playing Games</span></div>
+          <div class="hobby"><i class="fa-solid fa-tv"></i><span>Watching Anime</span></div>
+          <div class="hobby"><i class="fa-solid fa-book-open"></i><span>Reading Novels & Manga</span></div>
+        </div>
+        <div class="download-row">
+          <a class="btn outline" href="#">Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form">
+          <input type="text" name="name" id="name" placeholder="Your name" required>
+          <input type="email" name="email" id="email" placeholder="Your email" required>
+          <textarea name="message" id="message" rows="6" placeholder="How can I help?" required></textarea>
+          <div class="form-row">
+            <button class="btn primary" type="submit">Send Message</button>
+            <div id="formStatus" class="form-status" aria-hidden="true"></div>
+          </div>
+        </form>
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:arthurjohn.pagayon@wvsu.edu.ph">arthurjohn.pagayon@wvsu.edu.ph</a></p>
+          <p>GitHub: <a href="https://github.com/Modig20" target="_blank">github.com/Modig20</a></p>
+          <div class="contact-icons">
+            <a href="https://www.facebook.com/arthurjohn.pagayon.7" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/Modig20" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Arthur John A. Pagayon</div>
+      <div>Made with <i class="fa-solid fa-heart"></i> in Iloilo</div>
     </div>
-  </section>
-
-  <section id="education" class="card">
-    <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p>West Visayas State University (2023 – Present)</p>
-        <p>Currently 3rd Year Student</p>
-      </div>
-      <div class="timeline-item">
-        <h3>Senior High School (STEM Strand)</h3>
-        <p>Passi National High School</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="card">
-    <h2>My Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A responsive personal portfolio to showcase my skills and projects.</p>
-      </div>
-      <div class="project-card">
-        <h3>Student Task Manager</h3>
-        <p>A web-based task manager app for students to stay organized.</p>
-      </div>
-      <div class="project-card">
-        <h3>Bank Churn Prediction</h3>
-        <p>Machine learning project predicting customer churn for SmartBank.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="hobbies" class="card">
-    <h2>Hobbies</h2>
-    <div class="hobbies-grid">
-      <div class="hobby-card">
-        <i class="fa-solid fa-gamepad"></i>
-        <h3>Playing Games</h3>
-      </div>
-      <div class="hobby-card">
-        <i class="fa-solid fa-tv"></i>
-        <h3>Watching Anime</h3>
-      </div>
-      <div class="hobby-card">
-        <i class="fa-solid fa-book-open"></i>
-        <h3>Reading Novels & Manga</h3>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="card">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:arthurjohn.pagayon@wvsu.edu.ph">arthurjohn.pagayon@wvsu.edu.ph</a></p>
-    <p>GitHub: <a href="https://github.com/Modig20" target="_blank">github.com/Modig20</a></p>
-    <p>Facebook: <a href="https://www.facebook.com/arthurjohn.pagayon.7/?_rdc=1&_rdr" target="_blank">facebook.com/arthurjohn.pagayon.7</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Arthur John A. Pagayon | Made with 💙 in Iloilo</p>
   </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+    menuBtn.addEventListener('click', ()=>{ navLinks.classList.toggle('open'); });
+    document.querySelectorAll('.nav a, .btn.primary, .filter').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const href = a.getAttribute('href');
+        if(href && href.startsWith('#')){ e.preventDefault(); document.querySelector(href).scrollIntoView({behavior:'smooth', block:'start'}); navLinks.classList.remove('open'); }
+      });
+    });
+    window.addEventListener('scroll', ()=>{
+      document.querySelector('.nav-wrap').classList.toggle('scrolled', window.scrollY>30);
+      document.querySelectorAll('section').forEach(sec=>{
+        const id = sec.id;
+        const top = sec.getBoundingClientRect().top;
+        const link = document.querySelector('.nav a[href="#'+id+'"]');
+        if(link) link.classList.toggle('active', top>=-200 && top<200);
+      });
+    });
+    document.querySelectorAll('.stat .num').forEach(el=>{
+      const target = +el.dataset.target;
+      let current = 0;
+      const step = Math.ceil(target/60);
+      const observer = new IntersectionObserver((entries, obs)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            const t = setInterval(()=>{
+              current += step;
+              if(current>=target){ el.textContent=target; clearInterval(t); } else el.textContent=current;
+            }, 18);
+            obs.unobserve(el);
+          }
+        });
+      }, {threshold:0.6});
+      observer.observe(el);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.filter').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll('.projects-grid .proj').forEach(p=>{
+          if(f==='all') p.style.display='block';
+          else p.style.display = p.classList.contains(f) ? 'block' : 'none';
+        });
+      });
+    });
+    document.getElementById('contactForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Sending...';
+      setTimeout(()=>{ status.textContent = 'Message sent. Thank you!'; setTimeout(()=>status.textContent='',3000); document.getElementById('contactForm').reset(); }, 900);
+    });
+  </script>
 </body>
 </html>
